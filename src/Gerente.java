@@ -19,9 +19,11 @@ class Gerente extends Empleado {
 
     void delegarTarea(Empleado empleado) {
         if (departamento == "Programación" && empleado instanceof Programador) {
-            System.out.println("Delegando tarea al programador " + empleado.getNombre());
+            System.out.println(
+                    "El gerente " + this.getNombre() + " delega tareas al programador " + empleado.getNombre());
         } else if (departamento == "Diseño" && empleado instanceof Disenador) {
-            System.out.println("Delegando tarea al disenador " + empleado.getNombre());
+            System.out
+                    .println("El gerente " + this.getNombre() + " delega tareas al disenador " + empleado.getNombre());
         } else {
             System.out.println("No tiene permitido de delegar tareas a este departamento.");
         }

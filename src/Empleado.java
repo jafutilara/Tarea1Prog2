@@ -5,6 +5,10 @@ public class Empleado {
     private String genero;
     private String flota_asignada;
     private int sueldo;
+    // double altura;
+    // String color_de_piel
+    // String color_de_cabello
+    // String color_de_ojos
 
     public Empleado(String nombre, String apellido, String genero, String flota_asignada, int sueldo) {
         this.nombre = nombre;
